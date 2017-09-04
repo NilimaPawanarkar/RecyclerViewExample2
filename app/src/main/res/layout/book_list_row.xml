@@ -7,45 +7,39 @@
     card_view:cardCornerRadius="5sp"
     card_view:cardElevation="5sp">
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:focusable="true"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp"
-    android:clickable="true"
-    android:background="?android:attr/selectableItemBackground"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/btitle"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
         android:padding="16dp"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:gravity="center"/>
-    <TextView
-        android:id="@+id/bauthor"
-        android:layout_below="@id/btitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:textSize="16dp"/>
-    <TextView
-        android:id="@+id/bprice"
-        android:layout_below="@id/bauthor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:textSize="16dp"/>
+        >
+
+        <TextView
+            android:id="@+id/btitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bauthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btitle"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/bprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bauthor"
+            android:textSize="16dp" />
 
 
-
-
-</RelativeLayout>
+    </RelativeLayout>
 </android.support.v7.widget.CardView>
